@@ -1,0 +1,58 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 10rem;
+    height: 3rem;
+    
+}
+
+.header-menu {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    color: #fff;
+}
+
+.header-menu > li {
+    transition: color .25s;
+
+}
+
+.header-menu > li:hover {
+    cursor: pointer;
+    color: var(--orange);
+}
+
+.menu-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    background: var(--appColor);
+    padding: 0.5rem;
+    border-radius: 5px;
+    display:none;
+    color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+
+    .menu-icon {
+        display: flex;
+    }
+
+    .header > :nth-child(2) {
+        position: fixed;
+        left: 2rem;
+        z-index: 99;
+    }
+
+    .header-menu {
+        flex-direction: column;
+        background-color: var(--appColor);
+        padding: 2rem;
+        position: relative;
+        left: 5rem;
+    }
+}

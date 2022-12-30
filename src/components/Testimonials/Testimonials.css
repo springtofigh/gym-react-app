@@ -1,0 +1,118 @@
+.testimonials {
+    display: flex;
+    padding: 0 2rem;
+    gap: 1rem;
+}
+
+.right-t {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    color: #fff;
+    flex: 1 1;
+}
+
+.right-t > :first-child {
+    color: var(--orange);
+    font-weight: bold;
+}
+
+.right-t > :nth-child(2),
+.right-t > :nth-child(3) {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.right-t > :nth-child(4) {
+    text-align: justify;
+    letter-spacing: 2px;
+    line-height: 60px;
+}
+
+.right-t > :nth-child(5) {
+    display: flex;
+    gap: 1rem;
+}
+
+.left-t {
+    flex: 1;
+    position: relative;
+}
+
+.left-t > img {
+    position: absolute;
+    top:2rem;
+    right: 8rem;
+    width: 17rem;
+    height: 20rem;
+    object-fit: cover;
+}
+
+.left-t > :first-child {
+    position: absolute;
+    width: 17rem;
+    height: 20rem;
+    border: 2px solid #ffa500;
+    background-color: transparent;
+    top: 0.9rem;
+    right: 9rem;
+}
+
+.left-t > :nth-child(2) {
+    position: absolute;
+    width: 17rem;
+    height: 19rem;
+    background: var(--planCard);
+    top: 4rem;
+    right: 7rem;
+}
+
+.arrows {
+    display: flex;
+    position: absolute;
+    gap: 1rem;
+    bottom: 1rem;
+    right: 1rem;
+}
+
+.arrows > img {
+    width: 1.5rem;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .testimonials {
+        flex-direction: column;
+    }
+
+    .right-t > :nth-child(2), 
+    .right-t > :nth-child(3) {
+        font-size: xx-large;
+    }
+
+    .left-t {
+        display: flex;
+        gap: 2rem;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .left-t > div {
+        position: relative;
+        display: none;
+    }
+
+    .left-t > img {
+        position: relative;
+        top: 0;
+        right: 0;
+        align-self: center;
+    }
+
+    .left-t > .arrows {
+        display: flex;
+        bottom: 0;
+        right: 0;
+    }
+}
