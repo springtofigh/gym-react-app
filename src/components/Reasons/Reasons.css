@@ -90,26 +90,54 @@
     }
 
     .right-r {
-        grid-auto-rows: auto;
-        overflow: hidden;
+        flex: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden; 
     }
 
     .right-r > :first-child {
-        width: 7rem;
+        width: 12rem;
         height: 17rem;
     }
 
     .right-r > :nth-child(2) {
-        width: 5rem;
+        width: 12rem;
         height: 10rem;
     }
 
     .right-r > :nth-child(3) {
+        width: 12rem;
+    }
+
+    .right-r > :nth-child(4) {
+        width: 12rem;
+        height: 6rem;
+    }
+
+    /* .right-r {
+        grid-auto-rows: auto;
+        overflow: hidden; 
+    } */
+
+    /* .right-r > :first-child {
+        width: 7rem;
+        height: 17rem;
+    } */
+
+    /* .right-r > :nth-child(2) {
+        width: 5rem;
+        height: 10rem;
+    } */
+
+    /* .right-r > :nth-child(3) {
         width: 7.5rem;
     }
 
     .right-r > :nth-child(4) {
         width: 7rem;
         height: 6rem;
-    }
+    } */
 }
