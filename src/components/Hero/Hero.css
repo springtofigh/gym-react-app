@@ -218,7 +218,7 @@
     }*/
 } 
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 900px) {
     .hero {
         flex-direction: column;
     }
@@ -268,12 +268,12 @@
         background: none;
     }
 
-    /* .heart-rate {
+    .heart-rate {
         right: 5rem;
-        top: 2rem; 
-    } */
+        /* top: 2rem;  */
+    } 
 
-    /* .calories {
+    .calories {
         position: relative;
         right: 20rem;
         top: 5rem;
@@ -286,5 +286,18 @@
     .calories > div > :nth-child(2) {
         font-size: 1rem;
         color: #fff;
-    } */
+    }
+
+    .hero-image {
+        width: 15rem;
+        position: relative;
+        top: 4rem;
+        right: 20rem;
+    }
+
+    .hero-image-back {
+        width: 15rem;
+        right: 20rem;
+        top: 0rem;
+    }
 }
