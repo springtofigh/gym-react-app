@@ -182,6 +182,49 @@
 }
 
 @media screen and (min-width: 320px) and (max-width: 768px){
+    .hero {
+        flex-direction: column;
+    }
+
+    .hero-blur {
+        width: 14rem;
+    }
+
+    .the-best-ad {
+        font-size: small;
+        margin-top: 0;
+        align-self: center;
+        transform: scale(0.8);
+    }
+
+    .hero-text {
+        align-items: center;
+        justify-content: center;
+        font-size: xx-large;
+    }
+
+    .hero-text > div:nth-of-type(3) {
+        text-align: center;
+        font-size: small;
+        font-weight: 200;
+    }
+
+    .figures {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .figures > div > span:nth-of-type(1) {
+        font-size: large;
+    }
+
+    .figures > div > span:nth-of-type(2) {
+        font-size: small;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
 
     .heart-rate {
         display: none;
