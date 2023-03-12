@@ -159,7 +159,7 @@
     padding: 1rem;
     position: absolute;
     top: 35rem;
-    left: 28rem;
+    left: 25rem;
 }
 
 .calories > img {
@@ -342,5 +342,34 @@
         width: 15rem;
         right: 20rem;
         top: 0rem;
+    }
+}
+
+@media screen and (min-width: 900px) and (max-width: 1200px) {
+    .hero-image {
+        width: 20rem;
+        position: relative;
+        top: 8rem;
+        left: 15rem;
+    }
+
+    .hero-image-back {
+        width: 12rem;
+        top:12rem;
+    }
+
+    .calories {
+        position: relative;
+        left: 10rem;
+        top: 10rem;
+    }
+
+    .calories > img {
+        width: 2rem;
+    }
+
+    .calories > div > :nth-child(2) {
+        font-size: 1rem;
+        color: #fff;
     }
 }

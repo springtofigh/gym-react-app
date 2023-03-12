@@ -18,7 +18,7 @@
 
 .header-menu > li {
     transition: color .25s;
-
+    font-size: 22px;
 }
 
 .header-menu > li:hover {
