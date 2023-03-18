@@ -37,7 +37,7 @@ const Header = () => {
               to='programs'
               spy={true}
               smooth={true}
-              >برنامه ها</Link>
+              >برنامه‌ها</Link>
               </li>
             <li onClick={() => setMenu(false)}>
               <Link
