@@ -37,13 +37,16 @@
 }
 
 @media screen and (max-width: 768px) {
+    .logo {
+        width: 8rem;
+    }
 
     .menu-icon {
         display: flex;
     }
 
     .header > :nth-child(2) {
-        position: fixed;
+        position: absolute;
         left: 2rem;
         z-index: 99;
     }
@@ -53,6 +56,6 @@
         background-color: var(--appColor);
         padding: 2rem;
         position: relative;
-        left: 5rem;
+        left: 3rem;
     }
 }
