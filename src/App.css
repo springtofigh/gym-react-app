@@ -18,8 +18,26 @@
   gap: 6rem;
   overflow: hidden;
 }
+
 ::-webkit-scrollbar{
-  display: none;
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px var(--appColor); 
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--gray); 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--orange);
 }
 
 .stroke-text {
