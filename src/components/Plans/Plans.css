@@ -91,7 +91,21 @@
     color: #ffa500;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 480px) {
+    .plans {
+        flex-direction: column;
+    }
+
+    .plans > :nth-child(2) {
+        transform: none;
+    }
+
+    .plan {
+        width: 12rem;
+    }
+}
+
+@media screen and (min-width: 480px) and (max-width: 768px) {
     .plans {
         flex-direction: column;
     }
