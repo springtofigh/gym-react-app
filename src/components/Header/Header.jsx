@@ -7,6 +7,7 @@ import { Link } from 'react-scroll';
 
 const Header = () => {
 
+  const mobileMenu = window.innerWidth <= 768 ? true : false;
   const [menu , setMenu] = useState(false);
 
   return (
@@ -20,45 +21,53 @@ const Header = () => {
           }
           
         </div>
-        <ul className="header-menu">
-            <li>
-            <Link
-            activeClass="active"
-            to='header'
-            spy={true}
-            smooth={true}
-            >خانه</Link>
-            </li>
-            <li>
-              <Link
-              to='programs'
-              spy={true}
-              smooth={true}
-              >برنامه‌ها</Link>
-              </li>
-            <li>
-              <Link
-              to='resons'
-              spy={true}
-              smooth={true}
-              >
-              چرا ما
-              </Link>
-            </li>
-            <li>
-              <Link
-              to='plans'
-              spy={true}
-              smooth={true}
-              >اهداف</Link></li>
-            <li>
-              <Link
-              to='testimonials'
-              spy={true}
-              smooth={true}
-              >نظرات</Link>
-              </li>
-        </ul>
+
+{(menu === false && mobileMenu === true) ? (
+  <HiMenu/>
+) : <ul className="header-menu">
+      <li>
+      <Link
+      activeClass="active"
+      to='header'
+      spy={true}
+      smooth={true}
+      onClick={() => setMenu(false)}
+      >خانه</Link>
+      </li>
+      <li>
+        <Link
+        to='programs'
+        spy={true}
+        smooth={true}
+        onClick={() => setMenu(false)}
+        >برنامه‌ها</Link>
+        </li>
+      <li>
+        <Link
+        to='resons'
+        spy={true}
+        smooth={true}
+        onClick={() => setMenu(false)}
+        >
+        چرا ما
+        </Link>
+      </li>
+      <li>
+        <Link
+        to='plans'
+        spy={true}
+        smooth={true}
+        onClick={() => setMenu(false)}
+        >اهداف</Link></li>
+      <li>
+        <Link
+        to='testimonials'
+        spy={true}
+        smooth={true}
+        onClick={() => setMenu(false)}
+        >نظرات</Link>
+        </li>
+      </ul> } 
     </div>
   )
 }
