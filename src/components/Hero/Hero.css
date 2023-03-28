@@ -247,18 +247,6 @@
         right: 4rem;
     }
 
-    /*.hero-image {
-        width: 15rem;
-        position: relative;
-        top: 4rem;
-        left: -2rem;
-    }
-
-    .hero-image-back {
-        width: 15rem;
-        right: 1rem;
-        top: 0rem;
-    }*/
 } 
 
 @media screen and (min-width: 768px) and (max-width: 900px) {
