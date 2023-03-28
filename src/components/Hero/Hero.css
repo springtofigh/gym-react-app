@@ -301,13 +301,12 @@
 
     .heart-rate {
         right: 5rem;
-        /* top: 2rem;  */
     } 
 
     .calories {
         position: relative;
-        right: 20rem;
-        top: 5rem;
+        right: 10rem;
+        top: 1rem;
     }
 
     .calories > img {
@@ -323,12 +322,12 @@
         width: 15rem;
         position: relative;
         top: 4rem;
-        right: 20rem;
+        right: 24rem;
     }
 
     .hero-image-back {
         width: 15rem;
-        right: 20rem;
+        right: 22rem;
         top: 0rem;
     }
 }

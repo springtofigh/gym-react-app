@@ -91,6 +91,10 @@
         margin-top: 2rem;
     }
 
+    .category {
+        padding: 1.5rem;
+    }
+
     .program-categories {
         justify-content: center;
     }

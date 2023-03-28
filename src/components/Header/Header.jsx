@@ -23,7 +23,7 @@ const Header = () => {
         </div>
 
 {(menu === false && mobileMenu === true) ? (
-  <HiMenu/>
+  null
 ) : <ul className="header-menu">
       <li>
       <Link

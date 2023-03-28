@@ -43,6 +43,9 @@
 
     .menu-icon {
         display: flex;
+        position: fixed;
+        left: 1rem;
+        top: 1rem;
     }
 
     .header > :nth-child(2) {
@@ -55,7 +58,8 @@
         flex-direction: column;
         background-color: var(--appColor);
         padding: 2rem;
-        position: relative;
+        position: fixed;
         left: 3rem;
+        z-index: 50;
     }
 }
