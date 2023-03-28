@@ -215,7 +215,7 @@
     }
 
     .figures > div > span:nth-of-type(1) {
-        font-size: large;
+        font-size: medium;
     }
 
     .figures > div > span:nth-of-type(2) {
