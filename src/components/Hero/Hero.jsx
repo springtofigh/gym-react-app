@@ -47,24 +47,20 @@ const Hero = () => {
             <div className="figures">
                 <div>
                     <span>
-                        <NumberCounter end={34} start={12} delay="4" prefix="+" />
+                        <NumberCounter end={34} start={12} delay="6" preFix="+" />
                     </span>
-                    {/* <span>۳۴+</span> */}
                     <span>مربی باتجربه</span>
                 </div>
                 <div>
                     <span>
-                        <NumberCounter end={987} start={800} delay="4" prefix="+" />
+                        <NumberCounter end={987} start={860} delay="6" preFix="+" />
                     </span>
-                    
-                    {/* <span>۹۸۷+</span> */}
                     <span>عضو فعال</span>
                 </div>
                 <div>
                     <span>
-                    <NumberCounter end={25} start={10} delay="4" prefix="+" />
+                    <NumberCounter end={25} start={10} delay="6" preFix="+" />
                     </span>
-                    {/* <span>۲۵+</span> */}
                     <span>برنامه بدنسازی</span>
                 </div>
             </div>
