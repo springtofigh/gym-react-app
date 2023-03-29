@@ -23,7 +23,11 @@ const Header = () => {
         </div>
 
 {(menu === false && mobileMenu === true) ? (
-  null
+
+menu ?
+<AiOutlineClose className='menu-icon' onClick={() => setMenu(false)} /> :
+<HiMenu className='menu-icon' onClick={() => setMenu(true)} />
+
 ) : <ul className="header-menu">
       <li>
       <Link
