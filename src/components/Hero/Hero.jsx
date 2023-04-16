@@ -47,7 +47,7 @@ const Hero = () => {
             <div className="figures">
                 <div>
                     <span>
-                        <NumberCounter end={34} start={12} delay="6" preFix="+" />
+                        <NumberCounter end={34} start={14} delay="6" preFix="+" />
                     </span>
                     <span>مربی باتجربه</span>
                 </div>
@@ -59,7 +59,7 @@ const Hero = () => {
                 </div>
                 <div>
                     <span>
-                    <NumberCounter end={25} start={10} delay="6" preFix="+" />
+                    <NumberCounter end={25} start={5} delay="6" preFix="+" />
                     </span>
                     <span>برنامه بدنسازی</span>
                 </div>
@@ -78,7 +78,7 @@ const Hero = () => {
 
             <motion.div 
             initial={{right: '-1rem'}}
-            whileInView={{right: '4rem'}}
+            whileInView={{right: '1.8rem'}}
             transition={transition}
             className="heart-rate">
                 <img src={Heart} alt="heart-logo" />
