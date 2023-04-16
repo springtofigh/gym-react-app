@@ -7,7 +7,6 @@ import { Link } from 'react-scroll';
 
 const Header = () => {
 
-  const mobileMenu = window.innerWidth <= 768 ? true : false;
   const [menu , setMenu] = useState(false);
 
   return (
