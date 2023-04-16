@@ -13,22 +13,7 @@ const Header = () => {
   return (
     <div className="header">
         <img src={Logo} alt="fitclub" className="logo" />
-        <div>
-          {
-            menu ?
-            <AiOutlineClose className='menu-icon' onClick={() => setMenu(false)} /> :
-            <HiMenu className='menu-icon' onClick={() => setMenu(true)} />
-          }
-          
-        </div>
-
-{(menu === false && mobileMenu === true) ? (
-
-menu ?
-<AiOutlineClose className='menu-icon' onClick={() => setMenu(false)} /> :
-<HiMenu className='menu-icon' onClick={() => setMenu(true)} />
-
-) : <ul className="header-menu">
+        <ul className="header-menu desktop-menu">
       <li>
       <Link
       activeClass="active"
@@ -71,7 +56,64 @@ menu ?
         onClick={() => setMenu(false)}
         >نظرات</Link>
         </li>
-      </ul> } 
+      </ul> 
+        <div className='mobile-icone'>
+            <AiOutlineClose className='menu-icon' onClick={() => setMenu(false)} />
+            <HiMenu className='menu-icon' onClick={() => setMenu(true)} />
+        </div>
+
+{(menu === false ) ? (
+
+menu ?
+<AiOutlineClose className='menu-icon' onClick={() => setMenu(false)} /> :
+<HiMenu className='menu-icon' onClick={() => setMenu(true)} /> 
+
+) :  <ul className="header-menu">
+      <li>
+      <Link
+      activeClass="active"
+      to='header'
+      spy={true}
+      smooth={true}
+      onClick={() => setMenu(false)}
+      >خانه</Link>
+      </li>
+      <li>
+        <Link
+        to='programs'
+        spy={true}
+        smooth={true}
+        onClick={() => setMenu(false)}
+        >برنامه‌ها</Link>
+        </li>
+      <li>
+        <Link
+        to='resons'
+        spy={true}
+        smooth={true}
+        onClick={() => setMenu(false)}
+        >
+        چرا ما
+        </Link>
+      </li>
+      <li>
+        <Link
+        to='plans'
+        spy={true}
+        smooth={true}
+        onClick={() => setMenu(false)}
+        >اهداف</Link></li>
+      <li>
+        <Link
+        to='testimonials'
+        spy={true}
+        smooth={true}
+        onClick={() => setMenu(false)}
+        >نظرات</Link>
+        </li>
+      </ul> 
+
+}
     </div>
   )
 }

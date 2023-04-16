@@ -26,6 +26,10 @@
     color: var(--orange);
 }
 
+.mobile-icone {
+    display: none;
+}
+
 .menu-icon {
     width: 1.5rem;
     height: 1.5rem;
@@ -52,6 +56,15 @@
         position: absolute;
         left: 2rem;
         z-index: 99;
+    }
+
+    .desktop-menu {
+        display: none;
+    }
+
+    .mobile-icone {
+        display: flex;
+        z-index: 50;
     }
 
     .header-menu {
