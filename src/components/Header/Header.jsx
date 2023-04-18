@@ -56,9 +56,12 @@ const Header = () => {
         >نظرات</Link>
         </li>
       </ul> 
-        <div className='mobile-icone'>
-            <AiOutlineClose className='menu-icon' onClick={() => setMenu(false)} />
+      <div className='mobile-icone'>
+          {
+            menu ?
+            <AiOutlineClose className='menu-icon' onClick={() => setMenu(false)} /> :
             <HiMenu className='menu-icon' onClick={() => setMenu(true)} />
+          }
         </div>
 
 {(menu === false ) ? (
