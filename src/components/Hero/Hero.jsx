@@ -47,19 +47,19 @@ const Hero = () => {
             <div className="figures">
                 <div>
                     <span>
-                        <NumberCounter end={34} start={14} delay="6" preFix="+" />
+                        <NumberCounter end={34} start={17} delay="10" preFix="+" />
                     </span>
                     <span>مربی باتجربه</span>
                 </div>
                 <div>
                     <span>
-                        <NumberCounter end={987} start={860} delay="6" preFix="+" />
+                        <NumberCounter end={987} start={860} delay="10" preFix="+" />
                     </span>
                     <span>عضو فعال</span>
                 </div>
                 <div>
                     <span>
-                    <NumberCounter end={25} start={5} delay="6" preFix="+" />
+                    <NumberCounter end={25} start={10} delay="10" preFix="+" />
                     </span>
                     <span>برنامه بدنسازی</span>
                 </div>
@@ -77,8 +77,8 @@ const Hero = () => {
             <button className="btn">عضویت</button>
 
             <motion.div 
-            initial={{right: '-1rem'}}
-            whileInView={{right: '1.8rem'}}
+            initial={{top: '-1rem'}}
+            whileInView={{top: '6rem'}}
             transition={transition}
             className="heart-rate">
                 <img src={Heart} alt="heart-logo" />

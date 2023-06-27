@@ -332,6 +332,12 @@
     }
 }
 
+@media screen and (min-width: 900px) and (max-width: 1024px) {
+    .heart-rate {
+        right: 0.9rem;
+    }
+}
+
 @media screen and (min-width: 900px) and (max-width: 1200px) {
     .hero-image {
         width: 20rem;
