@@ -243,8 +243,7 @@
     } 
 
     .left-h > .btn {
-        left: 4rem;
-        right: 4rem;
+        width:calc(90% - 3rem);
     }
 
 } 
